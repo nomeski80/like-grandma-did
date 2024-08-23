@@ -1,1 +1,1 @@
-web: gunicorn my_project.wsgi
+web: gunicorn like_grandma_did.wsgi
