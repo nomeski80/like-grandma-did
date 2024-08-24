@@ -9,7 +9,17 @@ class Recipe(models.Model):
     name_of_recipe = models.CharField(max_length=200, unique=True)
     created_on = models.DateTimeField(auto_now_add=True)
     slug = models.SlugField(max_length=200, unique=True)
-    ingredients = models.TextField()
-    instructions = models.TextField()
+    ingredients = models.TextField(unique=True)
+    instructions = models.TextField(unique=True)
     status = models.IntegerField(choices=STATUS, default=0)
+
+
+class Comment(models.Model):
+    name_of_recipe = models.ForeignKey(
+        Recipe, on_delete=models.CASCADE, related_name="comments")
+    author = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="commenter")
+    body = models.TextField()
+    approved = models.BooleanField(default=False)
+    created_on = models.DateTimeField(auto_now_add=True)
     
