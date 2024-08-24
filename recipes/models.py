@@ -12,6 +12,12 @@ class Recipe(models.Model):
     ingredients = models.TextField(unique=True)
     instructions = models.TextField(unique=True)
     status = models.IntegerField(choices=STATUS, default=0)
+    class Meta:
+        ordering = ["-created_on"]
+        
+    def __str__(self):
+        return f"{self.name_of_recipe} | written by {self.author}"
+            
 
 
 class Comment(models.Model):
@@ -22,4 +28,8 @@ class Comment(models.Model):
     body = models.TextField()
     approved = models.BooleanField(default=False)
     created_on = models.DateTimeField(auto_now_add=True)
-    
+    class Meta:
+        ordering = ["-created_on"]
+        
+    def __str__(self):
+        return f"Comment {self.body} by {self.author}"
