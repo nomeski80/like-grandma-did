@@ -9,9 +9,9 @@
 </head>
 
 <body>
-    <h1>Posts list</h1>
+    <h1>Recipes list</h1>
     {% for post in object_list %}
-    <h2>{{post.title}}</h2>
+    <h2>{{post.name_of_recipe}}</h2>
     <p>{{post.excerpt}}</p>
     <p>Author: {{post.author}}</p>
     {% endfor %}

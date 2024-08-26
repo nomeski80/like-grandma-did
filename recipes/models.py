@@ -12,6 +12,8 @@ class Recipe(models.Model):
     ingredients = models.TextField(unique=True)
     instructions = models.TextField(unique=True)
     status = models.IntegerField(choices=STATUS, default=0)
+    excerpt = models.TextField(blank=True)
+    
     class Meta:
         ordering = ["-created_on"]
         
