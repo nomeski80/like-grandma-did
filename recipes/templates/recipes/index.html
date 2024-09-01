@@ -18,10 +18,10 @@
                                     <p class="author">Author: {{ recipes.author }}</p>
                                 </div>
                             </div>
-                            <a href="% url 'post_detail' Recipe.slug %" class="post-link">
-                                <h2 class="card-title">{{ recipes.name_of_recipe }}</h2>
+                            <a href="{% url 'post_detail' recipes.slug %}" class="post-link">
+                                <h2 class="card-title">{{ recipes.name_of_recipe }}</h2></a>
                                 <p class="card-text"> {{ recipes.excerpt }}</p>
-                            </a>
+                            
 
                             <hr />
                             <p class="card-text text-muted h6">{{ recipes.created_on}}

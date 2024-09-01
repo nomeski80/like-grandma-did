@@ -22,6 +22,6 @@ def post_detail(request, slug):
     :template:`recipe/post_detail.html`
     """
 
-        queryset = Post.objects.filter(status=1)
+        queryset = Recipe.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
-        return render(request, "recipes/post_detail.html", {"recipes":Recipe },)
+        return render(request, "recipes/post_detail.html", {"recipe": post },)
