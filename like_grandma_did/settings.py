@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'hello_world', 
     'recipes',
     'django_summernote',
-    'aboutgrandma',
+    'about',
 ]
 
 MIDDLEWARE = [
