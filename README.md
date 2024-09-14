@@ -11,43 +11,38 @@ The site has been built with Django, JavaScript, HTML and CSS styling to enable 
 
 # Table of Contents
 
-User Experience Design (UX)
-The Strategy Plane
-Site Goals
-Epics
-User Stories
-The Scope Plane
-The Structure Plane
-Opportunities
+# User Experience Design (UX)
+# User Experience Design (UX)
+# The Strategy Plane
+# Site Goals
+# Epics
+# User Stories
+# The Scope Plane
+# The Structure Plane
+# Opportunities
 
-Wireframes
-Database Schema
-The Surface Plane
-Features
-Future Enhancements
-Technologies Used
-Testing
-Deployment
-Credits
+# Wire frames 
+# Database Schema
+# The Surface Plane
+# Features
+# Future Enhancements
+# Technologies Used
+# Testing
+# Deployment
+# Credits
 
 # User Experience Design (UX)
 
 The idea behind Like Grandma Did is to be a community site for users to share and create their family recipes with others, enabling them to keep traditions alive and to pass on the love of food and cooking together. Users will also be able to explore recipes written by other users from around the world. The graphical elements and overall design of the site provide the user with a simple and easy to navigae environment.
 # The Sites Ideal User
-Food lover looking to share their favourite recipes with others
-Someone looking to expand their recipe knowledge
-Someone looking for inspiration for new things to try
-Someone looking build their cooking social media following
-Site Goals
-To provide users with a place to find recipes
-To provide users with a place to share their own recipes
-To provide users with a place to discover new meals
-
+Like Grandma did is looking for users who like to cook and learn about cooking wholesome and hearty traditional meals. Users who are happy to share ideas and recipes with others and to give constructive feedback or comments on how they got on and what alternatives people might like to try.
 
 
 
 
 # The Strategy Plane
+![Screen shot of the Kanban board for the Like Grandma Did user stories](./static/images/kanban.png)
+[link to the User stories can be found here: ](https://github.com/users/nomeski80/projects/5/views/1)
 # Site Goals
 # Milestones - 
 
@@ -69,7 +64,11 @@ To provide users with a place to discover new meals
 # The Structure Plane
 # Opportunities
 # Wireframes 
-add screenshots here
+![wireframe of homepage](./static/images/homepage_wf.png) 
+![wireframe of mobile](./static/images/mobile_wf.png)
+![wireframe of about page](./static/images/about_grandma.png)
+
+
 # Database Schema
 add screenshots of Lucid here
 # The Surface Plane
@@ -123,7 +122,7 @@ speeds up the deployment process, ensures that the project is correctly set up a
 ready for actual use
 
 # Forking
-
+Forking an app from GitHub is a straightforward process that allows you to create your own version of a project to modify and customize as you see fit. To fork this app, click here to take you to the repository for Like Grandma Did on GitHub and click the "Fork" button located at the top right of the page. This action will create a personal copy of the repository in your own GitHub account, enabling you to experiment with changes without affecting the original project. You can then clone your forked repository to your local machine using Git, make updates, and push those changes back to your forked version. This is particularly useful for contributing to open source projects or developing new features while maintaining a stable base.
 
 
 

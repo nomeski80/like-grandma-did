@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
@@ -9,6 +10,7 @@ class Recipe(models.Model):
     name_of_recipe = models.CharField(max_length=200, unique=True)
     created_on = models.DateTimeField(auto_now_add=True)
     slug = models.SlugField(max_length=200, unique=True)
+    featured_image = CloudinaryField('image', default='placeholder')
     ingredients = models.TextField(unique=True)
     instructions = models.TextField(unique=True)
     status = models.IntegerField( choices=STATUS, default=0)

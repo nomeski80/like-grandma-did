@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 {% load crispy_forms_tags %}
 
 {% block content %}
@@ -17,6 +18,13 @@
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="image-container">
+                                {% if "placeholder" in recipes.featured_image.url %}
+                                <img class="card-img-top" src="{% static 'images/default.jpg' %}"
+                                  alt="placeholder image">
+                                {% else %}
+                                <img class="card-img-top" src=" {{ post.featured_image.url }}"
+                                  alt="{{ post.name_of_recipe }}">
+                                {% endif %}
                                 <div class="image-flash">
                                     <p class="author">Author: {{ recipes.author }}</p>
                                 </div>
