@@ -11,8 +11,8 @@ class Recipe(models.Model):
     slug = models.SlugField(max_length=200, unique=True)
     ingredients = models.TextField(unique=True)
     instructions = models.TextField(unique=True)
-    status = models.IntegerField(choices=STATUS, default=0)
-    excerpt = models.TextField(blank=True)
+    status = models.IntegerField( choices=STATUS, default=0)
+    excerpt = models.TextField(max_length=200, blank=True)
     prep_time = models.IntegerField(default=1, choices=((i,i) for i in range(1, 101)))
     cooking_time = models.IntegerField(default=1, choices=((i,i) for i in range(1, 101)))
     
