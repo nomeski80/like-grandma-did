@@ -24,8 +24,10 @@
                 <!-- The post content goes inside the card-text. -->
                 <!-- Use the | safe filter inside the template tags -->
                 <p class="card-text">
-                    {{ recipe.ingredients | safe }}
-                    {{ recipe.instructions | safe }}
+                  Ingredients {{ recipe.ingredients | safe }} 
+                  Instructions  {{ recipe.instructions | safe }} 
+                  prep time   {{ recipe.prep_time | safe }}  
+                  cooking time  {{ recipe.cooking_time | safe }} 
                 </p>
             </div>
         </div>

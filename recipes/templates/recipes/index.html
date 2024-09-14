@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load crispy_forms_tags %}
 
 {% block content %}
 
@@ -6,7 +7,9 @@
 <div class="container-fluid">
     <div class="row">
 
-        <!-- Blog Entries Column -->
+         
+
+        <!-- Recipes Column -->
         <div class="col-12 mt-3 left">
             <div class="row">
                 {% for recipes in recipe_list %}
@@ -54,6 +57,25 @@
     </nav>
     {% endif %}
 </div>
+
+<!-- add your own recipe -->
+<div class="col-md-4 card mb-4 mt-3">
+    <div class="card-body">
+      {% if user.is_authenticated %}
+      <h3>Add your recipes here:</h3>
+      <p>Posting as: {{ user.username }}</p>
+      <form id="recipeForm" method="post"
+        style="margin-top: 1.3em;">
+        {{ recipe_form|crispy }}
+        {% csrf_token %}
+        <button id="submitButton" type="submit"
+          class="btn btn-signup btn-lg">Submit</button>
+      </form>
+      {% else %}
+      <p>Log in to add a recipe</p>
+      {% endif %}
+    </div>
+  </div>
 
 <!-- index.html content ends here -->
 {% endblock %}
