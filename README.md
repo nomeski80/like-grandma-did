@@ -9,10 +9,10 @@ Welcome to Like Grndama Did, a website designed to treasure those delicious memo
 The site has been built with Django, JavaScript, HTML and CSS styling to enable the user to have full CRUD functionality of the site. The site is targeted towards users who have a nostalgic love of food and treasure the memories and moments to share with the loved ones in their family.
 
 
-# add screenshot of home page here
+![homepage](./static/images/deployed_homepage.png)
 
 
-# view the live website here...
+[view the live website here...](https://like-grandma-did-bec989b034ed.herokuapp.com/)
 
 
 
@@ -25,34 +25,25 @@ The site has been built with Django, JavaScript, HTML and CSS styling to enable 
 3. [Site Goals](#site-goals)
 4. [Milestones](#milestones)
 5. [User Stories](#user-stories)
-6. [The Scope Plane](#the-scope-plan)
-7. [The Structure Plane](#the-structure-plane)
-8. [Opportunities](#opportunities)
-9. [Wire frames](#wireframes)
-10. [Database Schema](#datebase-schema)
-11. [The Surface Plane](#the-serface-plane)
-12. [Features](#features)
-13. [Future Enhancements](#future-enhancements)
-14. [Technologies Used](#technologies-used)
-15. [Testing](#testing)
-16. [Deployment](#deployment)
-17. [Forking](#forking)
-18. [Bugs and Issues](#bugs-and-issues)
-19. [Credits](#credits)
+6. [Opportunities](#opportunities)
+7. [Wire frames](#wireframes)
+8. [Database Schema](#datebase-schema)
+9. [The Surface Plane](#the-serface-plane)
+10. [Features](#features)
+11. [Future Enhancements](#future-enhancements)
+12. [Technologies Used](#technologies-used)
+13. [Testing](#testing)
+14. [Deployment](#deployment)
+15. [Forking](#forking)
+16. [Bugs and Issues](#bugs-and-issues)
+17. [Credits](#credits)
 
 
 ## User Experience Design (UX)
-
-
 The idea behind Like Grandma Did is to be a community site for users to share and create their family recipes with others, enabling them to keep traditions alive and to pass on the love of food and cooking together. Users will also be able to explore recipes written by other users from around the world. The graphical elements and overall design of the site provide the user with a simple and easy to navigae environment.
+
 # The Sites Ideal User
 Like Grandma did is looking for users who like to cook and learn about cooking wholesome and hearty traditional meals. Users who are happy to share ideas and recipes with others and to give constructive feedback or comments on how they got on and what alternatives people might like to try.
-
-
-
-
-
-
 
 
 ## The Strategy Plane
@@ -62,14 +53,10 @@ My ambitions for this site and the ideas I had for it were way above what I have
 
 
 ## Site Goals
-
-
 The goals of this site are to provide an effective, easy-to-use, step-by-step guide to cooking traditional family handed-down recipes. To encourage people to go back to their roots and to think about what happy nostalgic memories they have from their own childhood and the quality time they may have spent with their grandparents. The app should be visually pleasing, easy to navigate, intuitive to use and an essential tool for the kitchen when cooking for the family.
 
 
 ## Milestones -
-
-
 11 milestones were created to plan out the project and they were divided into the User stories with the labels must have, should have and might have. These can be viewed here on the kanban board.
 - Create an app with Django and deploy on Heroku
 - Plan and design site Features
@@ -87,13 +74,11 @@ The goals of this site are to provide an effective, easy-to-use, step-by-step gu
 ## User Stories
 User Stories have been written out in the Kanboard and matched with the milestones, they have been labelled and prioritized with 'must have, 'should have' and 'could have'.
 
-
 “View recipe ideas".
 Content - "As a site user, I can view a list of recipes so that I can select which recipe I want to view."
 AC1 - "Given more than one recipe in the database, these multiple recipes are listed."
 AC2 - "When a user opens the main page a list of recipes are seen."
 AC3 - "Then the user sees all recipe titles with pagination to choose what to read."
-
 
 <br>
 “Sign in / register".
@@ -103,14 +88,12 @@ AC2 - "When a user opens the main page sign in/ register option is seen."
 AC3 - "Sign in has authentication."
 AC4 - “User is notified when signed in successfully or when a mistake has been made”
 
-
 <br>
 “Add recipe".
 Content - "As a site user, I can add a recipes so that I can share my own ideas and recipes."
 AC1 - "easily add images and details about my recipe."
 AC2 - "user receives  a message that recipe had been received."
 AC3 - "site user can view recipe as it would display when published."
-
 
 <br>
 “Rate / comment on other recipes".
@@ -119,14 +102,12 @@ AC1 - "Simple, functional 5 star rating system"
 AC2 - "Comment form is simple and functional to use."
 AC3 - "must be signed in to rate or comment."
 
-
 <br>
 “sign up for a subscription".
 Content - "As site admin, I can access data on subscribers so that I can share new posts and recipes"
 AC1 - "easily sign up for the subscription ( site user)"
 AC2 - "access the information about site users ."
 AC3 - "share new posts/ recipes"
-
 
 <br>
 “Search function”.
@@ -135,7 +116,6 @@ need.”
 AC1 - "Search box on each page"
 AC2 - "CRUD functionality to be able to read the information."
 
-
 <br>
 “pictural icons".
 Content - "As a site user, I can easily see the time, difficulty and expense of a recipe in icon format so that I
@@ -143,20 +123,17 @@ can quickly glance through the information to find what I need"
 AC1 - "Clear easy to understand icons"
 AC2 - "consistency used throughout the site, location, colour, size."
 
-
 <br>
 “Links to socials”.
 Content - "As a site user, I can share my other socials information so that I can easily build my online presence/ following.”
 AC1 - "Clickable icons on the footer of each page"
 AC2 - "Consistency used throughout the site, location, colour, size."
 
-
 <br>
 “ Edit or delete my post”
 Content - "As a Site User I can modify or delete my comment on a recipe / post".
 AC1 - "Clear easy to understand icons"
 AC2 - "consistency used throughout the site, location, colour, size."
-
 
 <br>
 “Manage posts”.
@@ -165,10 +142,6 @@ AC1 - "Clickable icons on the footer of each page"
 AC2 - "Consistency used throughout the site, location, colour, size."
 
 
-
-
-## The Scope Plane
-## The Structure Plane
 ## Opportunities
 Taken from the user stories.
 **Opportunities**|**Importance**|**Viability / Feasibility**
@@ -186,8 +159,6 @@ Rate on other recipes"|3|4
 ![wireframe of homepage](./static/images/homepage_wf.png)
 ![wireframe of mobile](./static/images/mobile_wf.png)
 ![wireframe of about page](./static/images/about_grandma.png)
-
-
 
 
 ## Database Schema
@@ -222,7 +193,7 @@ Django, HTML, CSS, Java Script, Bootstrap, Heroku to deploy my project and make 
 
 
 ## Testing - mannual testing, quality assurance, addressing potential issues
-
+Testing was not done as the site was so far from being finished in time. 
 
 ## Deployment -
 To deploy my Django App on Heroku I followed these steps:
@@ -280,24 +251,35 @@ Forking an app from GitHub is a straightforward process that allows you to creat
 
 
 ## Bugs and Issues
-Deployed in Heroku but could not open the app. I contacted Tutoring service and they helped me to spot that the ‘SITE-ID=1” was missing and I was also missing the database URL in the config Vars on Heroku.
-![screenshot of Heroku](./static/images/heroku_bugs.png)
+- Deployed in Heroku but could not open the app. I contacted Tutoring service and they helped me to spot that the ‘SITE-ID=1” was missing and I was also missing the database URL in the config Vars on Heroku.
+<br>
+![screenshot of Heroku](./static/images/heroku_bug.png)
+<br>
 ![screenshot](./static/images/heroku_tails.png) 
 
 
+- I could not get Summernote to work properly, as I wanted it to help to customise the forms. Solution, changed to summernote_fields to match my model with ingredients and instructions.
 
 
-I could not get Summernote to work properly, as I wanted it to help to customise the forms. Solution, changed to summernote_fields to match my model with ingredients and instructions.
+- Viewpoints were not showing correctly as I had used the html code snippet from the walkthrough. Altered, to match my own models and now they are displaying properly.
 
 
-Viewpoints were not showing correctly as I had used the html code snippet from the walkthrough. Altered, to match my own models and now they are displaying properly.
+- I was unable to add in the ‘excerpt’ to my models as I wanted to be able to show a summary of each recipe. I resolved this by going through the walk through example project again and remembering to make migrations and migrate. This then worked well.
 
 
-I was unable to add in the ‘excerpt’ to my models as I wanted to be able to show a summary of each recipe. I resolved this by going through the walk through example project again and remembering to make migrations and migrate. This then worked well.
+- I also tried to add in a link to show the original source of the recipes by I could not get this to work. I had to review the templates and delete some of the migrations to get me back to the working page. I decided to drop this feature as the recipes are supposed to be handed down through the family. So I decided to give credit her in the ReadMe file rather than on the application itself.
 
 
-I also tried to add in a link to show the original source of the recipes by I could not get this to work. I had to review the templates and delete some of the migrations to get me back to the working page. I decided to drop this feature as the recipes are supposed to be handed down through the family. So I decided to give credit her in the ReadMe file rather than on the application itself.
-
+#  Issues still not resolved
+- Unable to successfully add a recipe from the front end of the site. The infromation goes to the admin to be approved but it breaks the page ad doesn not link back to teh homepage as planned. Tutoring support has suggested I change my submit recipe from the PostList view and create a new view called SubmitRecipe. 
+- Option for the user to like the recipe 
+- When commenting on a recipe the forign key does not correctly match up so I had to add an extra pull down menu to connect with comment with the name of the recipe. Idealy this would not be nesseccery. 
+- No search function
+- No options to share recipes on scoial media
+- the site is not at all responsive
+- the site is not correctly styled with CSS or Bootstrap
+- Default image does not appear in Deployed site
+- Sign up page does not have the same styling as the rest of the site ![signup page](./static/images/signup.png)
 
 ## Credits
 Many of the recipes for the content of this site came from  [the Cookbook on GitHUb by J Callaghan](
@@ -310,7 +292,7 @@ Some others were created on ChatGpt, to provide me with instant content so I cou
 To help me get started and ensure I downloaded all of the applications correctly I used the Code Institute I Think Therefor I Blog walkthrough.
 
 
-I would like to thank my mentor Grame Taylor for guiding me through the project and the tutoring team at CI for hetting me back on track when I got stuck.
+I would like to thank my mentor Graeme Taylor for guiding me through the project and the tutoring team at CI for hetting me back on track when I got stuck.
 
 
 The grandma image came from [FreePik](https://www.freepik.com/photos/grandma-cooks/4).
