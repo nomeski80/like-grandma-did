@@ -21,11 +21,11 @@ class PostList(generic.ListView):
         recipe_form = RecipeForm(request.POST)
         if recipe_form.is_valid():
             recipe_form.save()
-            return redirect("add your redirect after form submission")
+            return HttpResponseRedirect(reverse('post_list'))
         else:
             context = self.get_context_data()
             context["recipe_form"] = recipe_form
-            return render(request, self.template_name, context)    
+            return self.render_to_response(context)  
     
 
 
